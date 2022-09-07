@@ -1,12 +1,5 @@
 <?php
 require_once './connect.php';
-
-/** CRUD
- * Create
- * Read
- * Update
- * Delete
- *  */
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -16,23 +9,8 @@ require_once './connect.php';
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>00074-pet-CRUD</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-  tr,
-  td {
-    padding: 10px;
-  }
-
-  th {
-    background-color: #000;
-    color: #fff;
-  }
-
-  td {
-    background-color: #888;
-  }
-</style>
 
 <body>
   <table>

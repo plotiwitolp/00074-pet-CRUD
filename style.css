@@ -54,3 +54,15 @@ th {
 td {
   background-color: #888;
 }
+
+form {
+  padding: 20px;
+}
+form input,
+form textarea {
+  border: 1px solid #555;
+}
+form input[type=submit] {
+  cursor: pointer;
+  padding: 10px 20px;
+}

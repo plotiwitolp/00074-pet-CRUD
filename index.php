@@ -1,5 +1,5 @@
 <?php
-require_once './connect.php';
+require_once './config/connect.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -29,12 +29,23 @@ require_once './connect.php';
         <td><?= $product[1] ?></td>
         <td><?= $product[3] ?></td>
         <td><?= $product[2] ?></td>
+        <td><a href="./update.php?id=<?= $product[0] ?>">Изменить</a></td>
+        <td><a style="color:#720000" href="./vendor/delete.php?id=<?= $product[0] ?>">Удалить</a></td>
       </tr>
     <?php
     }
     ?>
-  </table>
-
+  </table><br><br>
+  <h3>Добавить новый продукт</h3>
+  <form action="./vendor/create.php" method="POST">
+    <p>Зоголовок</p>
+    <input type="text" name="title"><br><br>
+    <p>Описание</p>
+    <textarea type="text" name="description"></textarea><br><br>
+    <p>Цена</p>
+    <input type="number" name="price"><br><br>
+    <input type="submit" value="Добавить новый продукт">
+  </form>
 
 
 </body>
